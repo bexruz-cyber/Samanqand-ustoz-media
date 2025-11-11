@@ -57,3 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const timerId = setInterval(tick, 1000);
   })();
+
+  const locationTelegram = document.querySelectorAll(".locationTelegram")
+  locationTelegram.forEach((item) => {
+    item.addEventListener("click", function(){
+      window.location.href = "https://t.me/+p-KEcWA1S2UyNWNi"
+    })
+  })
