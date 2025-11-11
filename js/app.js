@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 (function () {
-    const elDays = document.getElementById("days");
-    const elHours = document.getElementById("hours");
     const elMinutes = document.getElementById("minutes");
     const elSeconds = document.getElementById("seconds");
 
@@ -26,8 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let remaining = 2 * 60;
 
     // Fixed parts
-    elDays.textContent = "00";
-    elHours.textContent = "00";
 
     function pad(n) {
       return n.toString().padStart(2, "0");
